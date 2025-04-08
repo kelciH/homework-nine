@@ -11,7 +11,7 @@
 
 .text {
     margin: 0 auto;
-    width: 1680px;
+    max-width: 1680px;
     text-align: center;
     margin-top: 50px;
 
@@ -39,6 +39,12 @@
         object-fit: cover;
         object-position: center;
         
-        
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .imgs {
+        flex-direction: column;
+        gap: 20px;
     }
 }
